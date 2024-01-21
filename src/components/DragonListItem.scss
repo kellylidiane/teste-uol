@@ -1,0 +1,73 @@
+.dragon-list-item {
+    list-style-type: none;
+    margin-bottom: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 13px;
+    transition: 0.3s;
+
+    .dragon-icon {
+        font-size: 30px;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+        line-height: 50px;
+        margin-right: 10px;
+
+        @media (max-width: 450px) {
+            display: none;
+        }
+    }
+
+    .dragon-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        >a {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            padding: 25px;
+            text-decoration: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #000;
+        }
+
+        >div {
+            padding-right: 25px;
+
+            button {
+                background-color: #FFF;
+                padding: 10px;
+                border: none;
+                border-radius: 13px;
+                font-size: 18px;
+                cursor: pointer;
+                margin-left: 5px;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #e6e6e6;
+                }
+            }
+        }
+    }
+
+    &:nth-child(odd) .dragon-icon {
+        background: #b7deff;
+        color: #000;
+    }
+
+    &:nth-child(even) .dragon-icon {
+        background: #a52f00;
+        color: #FFF;
+    }
+
+    &:hover {
+        border-color: #979797;
+    }
+}

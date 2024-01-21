@@ -1,0 +1,28 @@
+.login-container {
+    width: fit-content;
+    margin: 20% auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    input {
+        display: block;
+        font-size: 16px;
+        border-width: 0 0 1px 0;
+        margin: 0 0 10px 0;
+        line-height: 1.5;
+        padding: 5px;
+    }
+
+    button {
+        font-size: 18px;
+        background-color: #580000;
+        color: white;
+        border-radius: 5px;
+        padding: 8px;
+        border-style: none;
+        margin-top: 5px;
+    }
+}
